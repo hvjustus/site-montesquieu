@@ -70,6 +70,12 @@ main .text-container h1 {
     text-align: center;
 }
 
+main .text-container h2 {
+    text-align: left;
+    font-size: 1.25rem;
+    margin: 1rem auto 0.5rem auto
+}
+
 main .text-container p{
     text-indent: 2rem;
     line-height: 1.6;
@@ -91,6 +97,7 @@ main .image-container img {
 }
 
 main .image-container p {
+    margin-top: 0.25rem;
     opacity: 75%;
     font-size: 0.75rem;
 }
@@ -117,6 +124,7 @@ main .image-container p {
 }
 
 main .map-container p {
+    margin-top: 0.25rem;
     opacity: 75%;
     font-size: 0.75rem;
 }
