@@ -2,100 +2,30 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Montesquieu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Montesquieu - Capa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style_capa.css">
+    <script src="./scripts/animacao_capa.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img src="./img/botao_inicio.png" onclick="window.location.href='./index.html'">
-            <a href="javascript:history.back()">Voltar</a>
-        </nav>
+    <section class="page-wrapper">
+        <div class="cover-container" id="cover">
+            <img src="./img/canto.png" class="canto sup-direita" />
+            <img src="./img/canto.png" class="canto sup-esquerda" />
+            <img src="./img/canto.png" class="canto inf-esquerda" />
+            <img src="./img/canto.png" class="canto inf-direita" />
 
-        <select onchange="window.location.href=this.value">
-            <option value="">Selecione uma categoria</option>
-            <option value="./pages/biografia.html">Biografia</option>
-            <option value="./pages/teoria.html">Teoria Central</option>
-            <option value="./pages/editorial.html">Editorial</option>
-            <option value="./pages/podcast.html">Podcast (IA)</option>
-            <option value="./pages/referencias.html">Referências</option>
-        </select>
-    </header>
-
-    <main>
-        <div class="text-container">
-            <h1>Montesquieu</h1>
-            <br>
-            <p>Montesquieu foi um filósofo francês que refletiu sobre como o poder deveria ser dividido para evitar
-                abusos. Suas ideias sobre leis, governo e liberdade ainda influenciam a política moderna.</p>
-            <p>Ele também observava a sociedade e os costumes das pessoas, tentando entender o que funcionava e o que
-                precisava mudar. Mesmo depois de séculos, seu pensamento continua relevante.</p>
+            <main>
+                <h1>A Vida de Montesquieu</h1>
+                <a href="#" id="seguir-btn">Seguir</a>
+            </main>
         </div>
-
-        <div class="resumos">
-            <h1>Resumos</h1>
-            <details>
-                <summary>Quem foi?</summary>
-                <p>Montesquieu (1689–1755) foi um filósofo e escritor francês que, em obras como O Espírito das Leis,
-                    desenvolveu a teoria da separação dos poderes (legislativo, executivo e judiciário), defendendo
-                    formas de governo baseadas na liberdade e no equilíbrio político, ideias que influenciaram
-                    fortemente as constituições dos Estados Unidos e da França.</p>
-            </details>
-
-            <details>
-                <summary>Biografia</summary>
-                <p>Montesquieu (1689–1755), nascido no Castelo de La Brède, perto de Bordeaux, veio de família nobre.
-                    Estudou Direito e tornou-se conselheiro no Parlamento de Bordeaux, herdando em 1716 o título e o
-                    nome de Montesquieu. Após renunciar ao cargo, dedicou-se às ciências, à literatura e à filosofia. Em
-                    1721, publicou Cartas Persas, sátira da sociedade francesa. Eleito para a Academia Francesa em 1727,
-                    viajou pela Europa e reuniu estudos que resultaram em sua obra-prima, O Espírito das Leis (1748).
-                    Nela, classificou os governos em república, monarquia e despotismo, e formulou o princípio da
-                    separação dos poderes (legislativo, executivo e judiciário), que influenciou fortemente as
-                    Constituições dos EUA (1787) e da França (1791).</p>
-
-                <div class="image-container">
-                    <img src="./img/foto_local_nascimento.jpg" alt="Local de nascimento de Montesquieu">
-                    <p>Castelo onde Montesquieu nasceu.</p>
-                </div>
-            </details>
-
-            <details>
-                <summary>Teoria</summary>
-                <p>A teoria de Montesquieu defende a separação dos poderes em legislativo, executivo e judiciário, para
-                    evitar abusos de autoridade e garantir a liberdade dos cidadãos por meio do equilíbrio entre as
-                    funções do Estado.
-                </p>
-            </details>
-
-            <details>
-                <summary>Vídeos Recomendados</summary>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/XOOmWPhwerQ?si=BWlZCUE2VZrGnC2M"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/9ltvYAN7R74?si=7Zn8LkX4nsYBM-s8"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </details>
-        </div>
-
-        <div class="image-container">
-            <img src="./img/montesquieu.png" alt="Imagem de Montesquieu">
-            <p>Pintura de Montesquieu. Artista desconhecido, 1753–1794</p>
-        </div>
-    </main>
-
-    <footer>
-        <sup>&copy; Por Henrique Justus & Kaike Cleve, 2025</sup>
-    </footer>
+    </section>
 </body>
 
 </html>

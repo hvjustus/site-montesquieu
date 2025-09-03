@@ -1,0 +1,83 @@
+body, html {
+    margin: 0; padding: 0; height: 100%;
+    font-family: monospace;
+    overflow: hidden; /* evita scroll durante animação */
+}
+
+.cover-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,0) 60%, rgba(255,255,255,0.7) 100%),
+        url('../img/background_capa.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.8s ease-in-out;
+    will-change: transform;
+}
+
+.cover-container.up {
+    transform: translateY(-100vh);
+}
+
+h1 {
+    font-family: "Meddon", cursive;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-shadow:
+        0 0 0.7rem rgba(255, 255, 255, 0.6),
+        0 0 0.7rem rgba(255, 255, 255, 0.8);
+}
+
+a#seguir-btn {
+    font-family: 'Times New Roman', serif;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a#seguir-btn:hover {
+    background-color: #333;
+}
+
+/* decoração dos cantos */
+.canto {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+}
+
+.sup-direita {
+    top: 0;
+    right: 0;
+    rotate: 180deg;
+}
+
+.sup-esquerda {
+    top: 0;
+    left: 0;
+    rotate: 90deg;
+}
+
+.inf-esquerda {
+    bottom: 0;
+    left: 0;
+    rotate: 0deg;
+}
+
+.inf-direita {
+    bottom: 0;
+    right: 0;
+    rotate: 270deg;
+}

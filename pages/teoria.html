@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/funcao_header.js" defer></script>
     <title>Montesquieu - Teoria Central</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="../img/botao_inicio.png" onclick="window.location.href='../index.html'">
-            <a href="javascript:history.back()">Voltar</a>
+            <img id="botaoInicio" src="../img/botao_inicio.png" alt="Botão Início">
+            <a href="#" id="linkVoltar">Voltar</a>
         </nav>
 
         <select onchange="window.location.href=this.value">
