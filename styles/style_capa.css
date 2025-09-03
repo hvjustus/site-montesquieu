@@ -1,7 +1,10 @@
-body, html {
-    margin: 0; padding: 0; height: 100%;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: monospace;
-    overflow: hidden; /* evita scroll durante animação */
+    overflow: hidden;
 }
 
 .cover-container {
@@ -9,7 +12,7 @@ body, html {
     height: 100vh;
     width: 100%;
     background-image:
-        radial-gradient(circle, rgba(255,255,255,0) 60%, rgba(255,255,255,0.7) 100%),
+        radial-gradient(circle, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.7) 100%),
         url('../img/background_capa.jpeg');
     background-size: cover;
     background-position: center;
@@ -21,6 +24,15 @@ body, html {
     transition: transform 0.8s ease-in-out;
     will-change: transform;
 }
+
+@media (min-width: 769px) {
+    .cover-container {
+        background-size: cover;
+        background-position: center top;
+        background-position-y: 20%;
+    }
+}
+
 
 .cover-container.up {
     transform: translateY(-100vh);
