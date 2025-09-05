@@ -7,5 +7,9 @@ seguirBtn.addEventListener('click', function (e) {
     setTimeout(function () {
         window.location.href = './pages/home.html';
     }, 800);
-}
-);
+});
+
+// impede que a página continue em branco quando usa o botão "voltar"
+window.addEventListener('pageshow', function () {
+    cover.classList.remove('up');
+});
